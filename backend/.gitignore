@@ -1,0 +1,28 @@
+# Environment variables
+.env
+
+# Node
+node_modules/
+dist/
+build/
+
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 忽略 user.json 文件
+user.json 

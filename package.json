@@ -1,0 +1,20 @@
+{
+	"name": "your-project-name",
+	"version": "1.0.0",
+	"private": true,
+	"workspaces": [
+		"electron",
+		"backend"
+	],
+	"scripts": {
+		"dev:electron": "cd electron && npm run dev",
+		"dev:backend": "cd backend && npm run dev",
+		"dev": "concurrently \"npm run dev:electron\" \"npm run dev:backend\"",
+		"build:electron": "cd electron && npm run build",
+		"build:backend": "cd backend && npm run build",
+		"build": "npm run build:backend && npm run build:electron"
+	},
+	"devDependencies": {
+		"concurrently": "^8.0.0"
+	}
+}
